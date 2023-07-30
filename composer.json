@@ -5,10 +5,17 @@
             "Src\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
     "authors": [
         {
             "name": "mostafa-elnagar"
         }
     ],
-    "require": {}
+    "require-dev": {
+        "phpunit/phpunit": "^10.2"
+    }
 }
