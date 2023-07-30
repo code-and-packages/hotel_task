@@ -4,4 +4,5 @@ How to Use this Task :
 
 2- run file "index.php" in the project
 
+3- run project tests
 `.\vendor\bin\phpunit .\tests\Unit\AdvertisedHotelRoomsTest.php`
