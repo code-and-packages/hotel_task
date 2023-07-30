@@ -26,7 +26,7 @@ function fire()
     /* 3- Sort Unique Rooms From Low Price To High Price*/
     $advertisers_hotels->SortUniqueRoomsFromLowPriceToHighPrice();
 
-    Response::json($advertisers_hotels->getUniqueRoomsWithLowPrice(), "success", 200);
+    Response::json($advertisers_hotels->getUniqueRoomsWithLowPrices(), "success", 200);
 }
 
 

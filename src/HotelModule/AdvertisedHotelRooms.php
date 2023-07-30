@@ -41,7 +41,16 @@ class AdvertisedHotelRooms
     /**
      * @return array
      */
-    public function getUniqueRoomsWithLowPrice()
+    public function getAllRooms()
+    {
+        return $this->all_rooms;
+    }
+
+
+    /**
+     * @return array
+     */
+    public function getUniqueRoomsWithLowPrices()
     {
         return $this->unique_rooms_with_low_prices;
     }
@@ -121,4 +130,18 @@ class AdvertisedHotelRooms
             });
         }
     }
+
+    /**
+     * @void
+     */
+    public function SortUniqueRoomsFromHighPriceToLowPrice()
+    {
+        if (count($this->hotels) > 0) {
+            usort($this->unique_rooms_with_low_prices, function ($a, $b) {
+                return $b['total'] - $a['total'];
+            });
+        }
+    }
+
+
 }
