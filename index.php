@@ -12,7 +12,7 @@ function fire()
     $advertisers_apis = [
         "https://coresolutions.app/php_task/api/api_v1.php", // advertiser 1
         "https://coresolutions.app/php_task/api/api_v2.php", // advertiser 2
-        "https://coresolutions.app/php_task/api/api_v3.php", // advertiser 3
+        "https://coresolutions.app/php_task/api/api_v31.php", // advertiser 3
     ];
 
     $advertisers_hotels = new AdvertisedHotelRooms();

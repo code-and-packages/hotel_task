@@ -33,7 +33,7 @@ class AdvertisedHotelRooms
             if (gettype($hotels) === "array" && count($hotels) > 0) {
                 $this->AppendNewHotels($hotels);
             } else {
-                Response::json(null, "Something Went error went reading one of advertisers apis or Check Your Internet", 404);
+                Response::json([], "Something Went error went reading one of advertisers apis or Check Your Internet", 404);
             }
         }
     }
